@@ -19,10 +19,10 @@ const AboutPage: React.FC<AboutPageProps> = ({ onPageChange }) => {
   };
 
   const achievements = [
-    { number: '200+', label: 'Happy Clients', icon: <Users className="w-6 h-6" /> },
-    { number: '10+', label: 'Years Experience', icon: <Calendar className="w-6 h-6" /> },
-    { number: '500+', label: 'Projects Completed', icon: <Award className="w-6 h-6" /> },
-    { number: '100%', label: 'Satisfaction Rate', icon: <Shield className="w-6 h-6" /> }
+    { number: '20+', label: 'Happy Clients', icon: <Users className="w-6 h-6" /> },
+    { number: '4+', label: 'Years Experience', icon: <Calendar className="w-6 h-6" /> },
+    { number: '19+', label: 'Projects Completed', icon: <Award className="w-6 h-6" /> },
+    { number: '95%', label: 'Satisfaction Rate', icon: <Shield className="w-6 h-6" /> }
   ];
 
   const values = [
@@ -54,69 +54,80 @@ const AboutPage: React.FC<AboutPageProps> = ({ onPageChange }) => {
   ];
 
   const certifications = [
-    { name: 'Licensed Landscaping Contractor', authority: 'Kenya Association of Landscapers', year: '2014' },
-    { name: 'Irrigation Systems Specialist', authority: 'East Africa Irrigation Institute', year: '2016' },
-    { name: 'Sustainable Landscaping Certificate', authority: 'Green Building Council Kenya', year: '2018' },
-    { name: 'Small Business License', authority: 'Kajiado County Government', year: '2024' }
-  ];
+  { name: 'Registered Landscaping Service', authority: 'Kajiado County Government', year: '2024' },
+  { name: 'Practical Experience', authority: 'Serving Local Homes & Gardens', year: 'Since 2020' },
+  { name: 'Community Impact', authority: 'Supporting Youth Employment', year: 'Ongoing' }
+];
+
 
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-green-50 to-green-100">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="lg:flex items-center gap-12">
-            <div className="lg:w-1/2 mb-8 lg:mb-0">
-              <Badge className="mb-6 bg-green-600 text-white">
-                🌟 Trusted Local Expert Since 2014
-              </Badge>
-              
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Meet Isaac Karanu
-              </h1>
-              
-              <p className="text-xl text-gray-700 mb-6">
-                Your dedicated landscaping professional transforming outdoor spaces across Kenya with 
-                over 10 years of experience and a passion for creating beautiful, sustainable gardens.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <Button 
-                  onClick={handleWhatsAppClick}
-                  size="lg" 
-                  className="bg-green-600 hover:bg-green-700 text-white px-8 py-4"
-                >
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  Connect on WhatsApp
-                </Button>
-                <Button 
-                  onClick={handleCallClick}
-                  variant="outline" 
-                  size="lg"
-                  className="border-green-600 text-green-700 hover:bg-green-50 px-8 py-4"
-                >
-                  <Phone className="w-5 h-5 mr-2" />
-                  Call for Consultation
-                </Button>
-              </div>
-            </div>
-            
-            <div className="lg:w-1/2">
-              <div className="relative">
-                <ImageWithFallback 
-                  src="https://images.unsplash.com/photo-1734303023491-db8037a21f09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYW5kc2NhcGluZyUyMHRlYW0lMjB3b3JraW5nfGVufDF8fHx8MTc1NTkzMzEyNXww&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Isaac Karanu at work"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg"
-                />
-                <div className="absolute -bottom-4 -right-4 bg-white p-4 rounded-lg shadow-lg">
-                  <div className="text-2xl font-bold text-green-700">10+</div>
-                  <div className="text-sm text-gray-600">Years Experience</div>
-                </div>
-              </div>
-            </div>
+<section className="py-20 bg-gradient-to-br from-green-50 to-green-100"> 
+  <div className="max-w-7xl mx-auto px-4">
+    <div className="lg:flex items-center gap-12">
+      
+      {/* Left Column - Text */}
+      <div className="lg:w-1/2 mb-8 lg:mb-0">
+        <Badge className="mb-6 bg-green-600 text-white animate-pulse">
+          🌟 Trusted Local Expert Since 2019
+        </Badge>
+        
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          Meet Isaac Karanu
+        </h1>
+        
+        <p className="text-xl text-gray-700 mb-6">
+          For over five years, Isaac has been helping families and businesses 
+          across Kenya bring their dream gardens to life — creating outdoor 
+          spaces that inspire, last, and thrive sustainably.
+        </p>
+        
+        
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4">
+          <Button 
+            onClick={handleWhatsAppClick}
+            size="lg" 
+            className="bg-green-600 hover:bg-green-700 text-white px-8 py-4"
+          >
+            <MessageCircle className="w-5 h-5 mr-2" />
+           Unlock My Discount
+          </Button>
+          <Button 
+            onClick={handleCallClick}
+            variant="outline" 
+            size="lg"
+            className="border-green-600 text-green-700 hover:bg-green-50 px-8 py-4"
+          >
+            <Phone className="w-5 h-5 mr-2" />
+            Call for Consultation
+          </Button>
+        </div>
+      </div>
+      
+<div className="lg:w-1/2">
+  <div className="relative">
+    <ImageWithFallback
+      src="./src/images/isaac landscaping.jpg"
+      alt="Isaac Karanu at work"
+      className="w-full h-[400px] object-contain rounded-lg shadow-lg"
+    />
+
+
+          {/* Testimonial Overlay */}
+          <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg max-w-xs">
+            <p className="italic text-gray-700">
+              “Isaac turned our backyard into a paradise. Highly recommend!”
+            </p>
+            <div className="mt-2 text-sm font-semibold text-green-700">– Mary, Nairobi</div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Achievements */}
       <section className="py-16 bg-white">
@@ -151,7 +162,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onPageChange }) => {
           
           <div className="space-y-8">
             <Card className="p-8 border-green-100">
-              <h3 className="font-bold text-xl mb-4 text-green-800">The Beginning (2014)</h3>
+              <h3 className="font-bold text-xl mb-4 text-green-800">The Beginning (2020f)</h3>
               <p className="text-gray-700 leading-relaxed">
                 My journey started with a simple love for plants and outdoor spaces. After completing my studies in 
                 horticulture, I began helping neighbors in Ongata Rongai transform their gardens. What started as 
@@ -160,7 +171,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onPageChange }) => {
             </Card>
             
             <Card className="p-8 border-green-100">
-              <h3 className="font-bold text-xl mb-4 text-green-800">Building Expertise (2015-2018)</h3>
+              <h3 className="font-bold text-xl mb-4 text-green-800">Building Expertise (2021-2022)</h3>
               <p className="text-gray-700 leading-relaxed">
                 I invested heavily in training and certifications, learning advanced irrigation techniques, 
                 sustainable landscaping practices, and modern garden design principles. This period taught me 
@@ -170,7 +181,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onPageChange }) => {
             </Card>
             
             <Card className="p-8 border-green-100">
-              <h3 className="font-bold text-xl mb-4 text-green-800">Growing the Business (2019-2022)</h3>
+              <h3 className="font-bold text-xl mb-4 text-green-800">Growing the Business (2023-2024)</h3>
               <p className="text-gray-700 leading-relaxed">
                 As client referrals increased, I expanded my services to include complete landscape design, 
                 irrigation systems, and ongoing maintenance. I built a network of trusted suppliers and learned 
@@ -180,7 +191,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onPageChange }) => {
             </Card>
             
             <Card className="p-8 border-green-100">
-              <h3 className="font-bold text-xl mb-4 text-green-800">Today & Beyond (2023-Present)</h3>
+              <h3 className="font-bold text-xl mb-4 text-green-800">Today & Beyond (2025-Present)</h3>
               <p className="text-gray-700 leading-relaxed">
                 Today, I'm proud to have transformed over 500 outdoor spaces across Kenya. My focus remains on 
                 delivering exceptional value, using sustainable practices, and building lasting relationships with 
@@ -305,7 +316,9 @@ const AboutPage: React.FC<AboutPageProps> = ({ onPageChange }) => {
       </section>
 
       {/* Personal Touch */}
-      <section className="py-20 bg-green-600 text-white">
+      <section className="py-20 bg-green-600 text-white"
+      
+      >
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             More Than Just Landscaping

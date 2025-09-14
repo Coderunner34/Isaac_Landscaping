@@ -9,7 +9,7 @@ interface HomePageProps {
   onPageChange: (page: string) => void;
 }
 
-const HomePage: React.FC<HomePageProps> = ({ onPageChange }) => {
+const HomePage = ({ onPageChange }: HomePageProps) => {
   const handleWhatsAppClick = () => {
     window.open('https://wa.me/254775269628?text=Hello%20Isaac!%20I%27m%20interested%20in%20a%20free%20consultation%20for%20my%20garden.', '_blank');
   };
@@ -29,13 +29,13 @@ const HomePage: React.FC<HomePageProps> = ({ onPageChange }) => {
       icon: '🌿',
       title: 'Lawn Care & Maintenance',
       description: 'Keep your lawn green and healthy year-round',
-      price: 'From KSH 3,000/month'
+      price: 'Starting from KSH 3,000/month'
     },
     {
       icon: '💧',
       title: 'Irrigation Systems',
       description: 'Smart watering solutions for efficient garden care',
-      price: 'From KSH 25,000'
+      price: 'plans from KSH 25,000'
     },
     {
       icon: '🌳',
@@ -49,7 +49,7 @@ const HomePage: React.FC<HomePageProps> = ({ onPageChange }) => {
     {
       name: 'Mary Wanjiku',
       location: 'Ongata Rongai',
-      text: 'Isaac transformed our compound in just 3 days. The irrigation system he installed has saved us so much time and water. Highly recommend!',
+      text: 'His team transformed our compound in just 3 days. The irrigation system he installed has saved us so much time and water. Highly recommend!',
       rating: 5,
       project: 'Complete Garden Makeover'
     },
@@ -63,16 +63,16 @@ const HomePage: React.FC<HomePageProps> = ({ onPageChange }) => {
     {
       name: 'Grace Muthoni',
       location: 'Karen',
-      text: 'The best investment we made for our home. The garden design exceeded our expectations and increased our property value.',
+      text: 'It was a good investment we made for our home. The garden design exceeded our expectations and increased our property value.',
       rating: 5,
       project: 'Landscape Design'
     }
   ];
 
   const stats = [
-    { number: '200+', label: 'Happy Clients' },
-    { number: '8+', label: 'Years Experience' },
-    { number: '50+', label: 'Projects Completed' },
+    { number: '20+', label: 'Happy Clients' },
+    { number: '4+', label: 'Years Experience' },
+    { number: '19+', label: 'Projects Completed' },
     { number: '95%', label: 'Satisfaction Rate' }
   ];
 
@@ -83,14 +83,14 @@ const HomePage: React.FC<HomePageProps> = ({ onPageChange }) => {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1599580546605-a86af98dbdb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsYW5kc2NhcGUlMjBnYXJkZW4lMjBkZXNpZ258ZW58MXx8fHwxNzU1ODcyNTM0fDA&ixlib=rb-4.1.0&q=80&w=1080')`
+            backgroundImage: `url('https://st.hzcdn.com/simgs/0ff17c8b085bc25b_14-1634/_.jpg')`
           }}
         />
         <div className="absolute inset-0 bg-black/40" />
         
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <Badge className="mb-6 bg-green-600/90 text-white border-green-500">
-            🏆 Award-Winning Landscaping Services in Kenya
+         🌱 Trusted Landscaping & Renovation Services You Can Rely On
           </Badge>
           
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -109,7 +109,7 @@ const HomePage: React.FC<HomePageProps> = ({ onPageChange }) => {
               className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
-              Get Free Quote via WhatsApp
+              Book in 2 Minutes
             </Button>
             <Button 
               onClick={handleCallClick}
@@ -137,7 +137,7 @@ const HomePage: React.FC<HomePageProps> = ({ onPageChange }) => {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="w-4 h-4 text-green-400" />
-              <span>100% Satisfaction Guarantee</span>
+              <span>99.9% Satisfaction Guarantee</span>
             </div>
           </div>
         </div>
@@ -206,42 +206,42 @@ const HomePage: React.FC<HomePageProps> = ({ onPageChange }) => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="relative group">
               <ImageWithFallback 
-                src="https://images.unsplash.com/photo-1561282186-302b83aad794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBsYW5kc2NhcGluZyUyMHBvcnRmb2xpb3xlbnwxfHx8fDE3NTU5MzMxMjR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="https://bestcarecleaning.co.ke/wp-content/uploads/2023/09/301957007_503963318400971_7667422548469977273_n-1.jpg"
                 alt="Modern landscape design"
                 className="w-full h-64 object-cover rounded-lg"
               />
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center">
                 <div className="text-white text-center">
                   <h4 className="font-bold text-lg mb-2">Modern Garden Design</h4>
-                  <p className="text-sm">Ongata Rongai • KSH 85,000</p>
+                  <p className="text-sm">Ongata Rongai • From KSH 15,000 – 85,000</p>
                 </div>
               </div>
             </div>
             
             <div className="relative group">
               <ImageWithFallback 
-                src="https://images.unsplash.com/photo-1562886695-0f3c22a48bbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBnYXJkZW4lMjB0cmFuc2Zvcm1hdGlvbnxlbnwxfHx8fDE3NTU5MzMxMjR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="https://5.imimg.com/data5/SELLER/Default/2021/4/LQ/YC/AY/59072755/lawn-installation-service.jpg"
                 alt="Luxury garden transformation"
                 className="w-full h-64 object-cover rounded-lg"
               />
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center">
                 <div className="text-white text-center">
                   <h4 className="font-bold text-lg mb-2">Luxury Transformation</h4>
-                  <p className="text-sm">Karen • KSH 150,000</p>
+                 <p className="text-sm">Karen • From KSH 45,000</p>
                 </div>
               </div>
             </div>
             
             <div className="relative group">
               <ImageWithFallback 
-                src="https://images.unsplash.com/photo-1657554378558-efc5479a9dcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWF1dGlmdWwlMjBvdXRkb29yJTIwcGF0aW8lMjBkZXNpZ258ZW58MXx8fHwxNzU1OTMzMTI5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="https://i.pinimg.com/474x/cf/e6/f6/cfe6f670c972429c743eb60a2941436b.jpg"
                 alt="Outdoor patio design"
                 className="w-full h-64 object-cover rounded-lg"
               />
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center">
                 <div className="text-white text-center">
                   <h4 className="font-bold text-lg mb-2">Outdoor Living Space</h4>
-                  <p className="text-sm">Kajiado • KSH 120,000</p>
+                  <p className="text-sm">Nairobi West • From KSH 30,000</p>
                 </div>
               </div>
             </div>
@@ -295,8 +295,16 @@ const HomePage: React.FC<HomePageProps> = ({ onPageChange }) => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-green-600 text-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+      <section className="py-20 bg-green-600 text-white"
+              style={{
+            backgroundImage: `url('https://st.hzcdn.com/simgs/0ff17c8b085bc25b_14-1634/_.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundAttachment: 'fixed'
+          }}
+          >
+        <div className="max-w-4xl mx-auto px-4 text-center" >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to Transform Your Outdoor Space?
           </h2>
@@ -311,7 +319,7 @@ const HomePage: React.FC<HomePageProps> = ({ onPageChange }) => {
               className="bg-white text-green-600 hover:bg-gray-100 px-8 py-4 text-lg"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
-              WhatsApp: +254 775 269 628
+              Start My Transformation
             </Button>
             <Button 
               onClick={handleCallClick}
@@ -331,7 +339,7 @@ const HomePage: React.FC<HomePageProps> = ({ onPageChange }) => {
             </div>
             <div className="flex items-center justify-center gap-2">
               <Users className="w-4 h-4" />
-              <span>200+ Happy Clients</span>
+              <span>Over 20+ Happy Clients</span>
             </div>
             <div className="flex items-center justify-center gap-2">
               <Calendar className="w-4 h-4" />

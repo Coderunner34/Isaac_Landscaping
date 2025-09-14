@@ -466,21 +466,39 @@ Please send me more information and a quote. Thank you!`;
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card className="p-6 border-green-100">
-              <h3 className="font-bold text-lg mb-2 text-gray-900">How quickly can you start?</h3>
-              <p className="text-gray-700 text-sm">
-                For consultations, usually within 24-48 hours. For project start, it depends on scope 
-                but typically 3-7 days after quote approval.
-              </p>
-            </Card>
+<Card className="p-6 border-green-100">
+  <h3 className="font-bold text-lg mb-4 text-gray-900">
+    What’s included in a free consultation — and do I need to prepare anything?
+  </h3>
+  <ul className="list-disc pl-5 space-y-2 text-gray-700 text-sm">
+    <li><strong>Site review or virtual call:</strong> We assess your space and needs.</li>
+    <li><strong>Design suggestions:</strong> Practical ideas tailored to your vision.</li>
+    <li><strong>Detailed cost estimate:</strong> Transparent breakdown with no hidden fees.</li>
+    <li><strong>Your part:</strong> Share your vision or photos (optional) — we handle the rest.</li>
+  </ul>
+</Card>
+
+
             
-            <Card className="p-6 border-green-100">
-              <h3 className="font-bold text-lg mb-2 text-gray-900">Do you provide free quotes?</h3>
-              <p className="text-gray-700 text-sm">
-                Yes! All consultations and quotes are completely free. We only charge when you 
-                decide to proceed with the project.
-              </p>
-            </Card>
+<Card className="p-6 border-green-100">
+  <div className="mb-2">
+    <span className="text-xs font-semibold uppercase tracking-wide text-green-600">
+      Most Asked
+    </span>
+  </div>
+  <h3 className="font-bold text-lg mb-3 text-gray-900">
+    How do I know I’m choosing the right landscaper for my home?
+  </h3>
+  <ul className="list-disc list-inside text-gray-700 text-sm space-y-2">
+    <li><span className="font-semibold">Proven Experience:</span> Over 5 years in landscaping.</li>
+    <li><span className="font-semibold">Happy Clients:</span> 80+ satisfied homeowners.</li>
+    <li><span className="font-semibold">Clear Communication:</span> We listen and price transparently.</li>
+    <li><span className="font-semibold">Trust & Proof:</span> Free consultation + real project examples.</li>
+  </ul>
+</Card>
+
+
+
             
             <Card className="p-6 border-green-100">
               <h3 className="font-bold text-lg mb-2 text-gray-900">What payment methods do you accept?</h3>
@@ -502,14 +520,21 @@ Please send me more information and a quote. Thank you!`;
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-green-600 text-white">
+      <section className="py-20 bg-green-600 text-white"
+        style={{
+            backgroundImage: `url('https://st.hzcdn.com/simgs/0ff17c8b085bc25b_14-1634/_.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundAttachment: 'fixed'
+          }}>
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to Transform Your Garden?
+            Create a Garden You’ll Love Coming Home To
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Don't wait - the best time to start your landscaping project is now. 
-            Get your free consultation today!
+           From design to installation, we’ll bring your vision to life.
+            Take the first step with a complimentary consultation — guaranteed at no cost.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

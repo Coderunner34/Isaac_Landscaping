@@ -50,7 +50,7 @@ Please send me a detailed quote and let me know the next steps!`;
       id: 'garden-design',
       title: 'Garden Design & Installation',
       description: 'Complete landscape design and installation services tailored to your space, style, and budget.',
-      image: 'https://images.unsplash.com/photo-1599580546605-a86af98dbdb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsYW5kc2NhcGUlMjBnYXJkZW4lMjBkZXNpZ258ZW58MXx8fHwxNzU1ODcyNTM0fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://i.roamcdn.net/hz/pi/listing-thumb-543w/45e19907848ab90b08ef3209f5e88653/-/horizon-files-prod/pi/picture/qpkrzd4/f34c0040a30d4aec07cb899bf964e79c244bed3d.jpg',
       packages: [
         {
           name: 'Basic Design',
@@ -76,7 +76,7 @@ Please send me a detailed quote and let me know the next steps!`;
       id: 'lawn-care',
       title: 'Lawn Care & Maintenance',
       description: 'Professional lawn installation, care, and ongoing maintenance services to keep your grass green and healthy.',
-      image: 'https://images.unsplash.com/photo-1558969330-ce91b84b1348?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnYXJkZW4lMjBtYWludGVuYW5jZSUyMHRvb2xzfGVufDF8fHx8MTc1NTkzMzEyOHww&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://www.rizzomasons.com/wp-content/uploads/sites/279/bb-plugin/cache/Rizzo_23-landscape-landscape-f45f493c1f15509f162bea8c435ff833-5b79966223030.jpeg',
       packages: [
         {
           name: 'New Lawn Installation',
@@ -128,7 +128,7 @@ Please send me a detailed quote and let me know the next steps!`;
       id: 'tree-care',
       title: 'Tree & Shrub Services',
       description: 'Professional tree planting, pruning, removal, and shrub care services for healthy and beautiful landscapes.',
-      image: 'https://images.unsplash.com/photo-1675415782443-32685e238b1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmVlJTIwcGxhbnRpbmclMjBsYW5kc2NhcGluZ3xlbnwxfHx8fDE3NTU5MzMxMjh8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://www.familyhandyman.com/wp-content/uploads/2021/07/shrubs-GettyImages-1148591849.jpg',
       packages: [
         {
           name: 'Tree Planting',
@@ -186,7 +186,7 @@ Please send me a detailed quote and let me know the next steps!`;
               className="bg-green-600 hover:bg-green-700 text-white px-8 py-4"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
-              Get Free Quote via WhatsApp
+              Book  Free Consultation — Limited Slots
             </Button>
             <Button 
               onClick={handleCallClick}
@@ -195,7 +195,7 @@ Please send me a detailed quote and let me know the next steps!`;
               className="border-green-600 text-green-700 hover:bg-green-50 px-8 py-4"
             >
               <Phone className="w-5 h-5 mr-2" />
-              Call for Immediate Quote
+              My Garden, My Design, My Plan  - Get quote
             </Button>
           </div>
         </div>
@@ -381,7 +381,15 @@ Please send me a detailed quote and let me know the next steps!`;
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-green-600 text-white">
+      <section className="py-20 bg-green-600 text-white"
+        style={{
+            backgroundImage: `url('https://st.hzcdn.com/simgs/0ff17c8b085bc25b_14-1634/_.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundAttachment: 'fixed'
+          }}
+      >
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to Get Started?
